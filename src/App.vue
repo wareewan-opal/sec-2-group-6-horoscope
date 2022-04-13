@@ -1,5 +1,5 @@
-<script setup>
-
+ <script setup>
+ //Hello I'm Game
 </script>
  
 <template>
@@ -45,7 +45,7 @@
     <img src="./assets/Last.png"  height="90">
 </div>
 <div class="copyright">
-<p> &copy; INT 203 Client-Side Web Programming || project round 2 : name HOROSCOPE by sec2 group 6 </p>
+<p> &copy; INT 203 Client-Side Web Programming || project round 2 : name HOROSCOPE by sec2 group 6 ^^ </p>
 </div>
 </template>
  
@@ -74,14 +74,13 @@ html , body{
   font-size: x-small;
   /* position: sticky; */
 }
-
 .titlename{
   text-align: center;
   color: #e1c68e;
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   letter-spacing: 1cm;
-  margin-left: 5.35em;
+  margin-left: 6.5em;
 }
 .right{
   position: relative;
