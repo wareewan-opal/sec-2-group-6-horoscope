@@ -30,7 +30,7 @@
   </div>
     <div class="card4">
     <div class="card-body">
-      <img src="./assets/Health.png" alt="book" height="390">
+      <img src="./assets/finance.png" alt="book" height="390">
       <h5>FINANCE HOROSCOPE</h5>
     </div>
   </div>
