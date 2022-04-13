@@ -12,30 +12,26 @@
   <div class="card-group">
   <div class="card1">
     <div class="card-body">
-      <h5 class="card-title">Love Horoscope</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <img src="./assets/love.png" alt="love" height="390">
+      <h5>LOVE HOROSCOPE</h5>
     </div>
   </div>
   <div class="card2">
     <div class="card-body">
-      <h5 class="card-title">Study Horoscope</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <img src="./assets/study.png" alt="book" height="390">
+      <h5>STUDY HOROSCOPE</h5>
     </div>
   </div>
   <div class="card3">
     <div class="card-body">
-      <h5 class="card-title">Health Horoscope</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <img src="./assets/Health.png" alt="book" height="390">
+      <h5>HEALTH HOROSCOPE</h5>
     </div>
   </div>
     <div class="card4">
     <div class="card-body">
-      <h5 class="card-title">All</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <img src="./assets/Health.png" alt="book" height="390">
+      <h5>FINANCE HOROSCOPE</h5>
     </div>
   </div>
 </div>
@@ -46,11 +42,10 @@
   <img src="./assets/right.png" height="550">
 </div>
 <div class="last">
-    <img src="./assets/Last.png"  height="110">
+    <img src="./assets/Last.png"  height="90">
 </div>
 <div class="copyright">
-<p> &copy; INT 203 Client-Side Web Programming || ^^ </p>
-project round 2 : name HOROSCOPE by sec2 group 6 
+<p> &copy; INT 203 Client-Side Web Programming || project round 2 : name HOROSCOPE by sec2 group 6 </p>
 </div>
 </template>
  
@@ -68,14 +63,16 @@ html , body{
   text-align: center;
   margin-top: -200em;
   padding-top: -50em;
-  margin-left: 0.5em;
+  margin-left: 11em;
 }
 .last{
   text-align: center;
   margin-left: -1ex;
-  padding-top: 33em;
+  margin-right: -18em;
+  padding-top: 40em;
   margin-top: -70ex;
-  position: sticky;
+  font-size: x-small;
+  /* position: sticky; */
 }
 
 .titlename{
@@ -84,30 +81,36 @@ html , body{
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   letter-spacing: 1cm;
-  margin-left: 1.5em;
+  margin-left: 5.35em;
 }
 .right{
   position: relative;
-  margin-top: -36%;
-  /* margin-bottom: -46%; */
+  margin-top: -41.25%;
   text-align: right;
+  margin-right: -13em;
 }
 .left{
   position: relative;
-  margin-top: -30%;
+  margin-top: -47.5%;
   text-align: left;
 }
 .copyright{
   text-align: center;
   color: #e1c68e;
   font-family: 'Cinzel Decorative', cursive;
-  font-size: medium;
+  font-size: x-small;
+  margin-right: -17em;
 }
 .card-group{
   display: block;
   /* padding-right: 0.3em; */
   padding-left: 15em;
-  /* background-color: #e1c68e; */
+margin-top: -2em;
 }
-
+h5{
+  text-align: center;
+}
+h5:hover{
+  color: #e1c68e;
+}
 </style>
