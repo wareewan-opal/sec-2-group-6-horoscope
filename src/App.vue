@@ -109,6 +109,7 @@ margin-top: -2em;
 }
 h5{
   text-align: center;
+  color: #C6C2C1 ;
 }
 h5:hover{
   color: #e1c68e;
