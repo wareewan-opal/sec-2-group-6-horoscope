@@ -20,7 +20,7 @@
 </div>
 <div class="copyright">
 <p> &copy; INT 203 Client-Side Web Programming || ^^ </p>
-project round 2 : name HOROSCOPE by sec2 group 6  ^^
+project round 2 : name HOROSCOPE by sec2 group 6 
 </div>
 
 
