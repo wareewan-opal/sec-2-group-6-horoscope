@@ -1,5 +1,4 @@
-<script setup>
-
+ <script setup>
 </script>
  
 <template>
@@ -74,14 +73,13 @@ html , body{
   font-size: x-small;
   /* position: sticky; */
 }
-
 .titlename{
   text-align: center;
   color: #e1c68e;
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   letter-spacing: 1cm;
-  margin-left: 5.35em;
+  margin-left: 6.5em;
 }
 .right{
   position: relative;
