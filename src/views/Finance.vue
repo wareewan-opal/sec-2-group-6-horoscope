@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import Finanace_component from '../component/card_component.vue';
+import card_component from '../component/card_component.vue';
 const deck = ref([])
 const type = ref('finance');
 //Get Card
@@ -17,7 +17,7 @@ onBeforeMount(async () =>{
  
 <template>
     <h1>FINANCE HOROSCOPE</h1>
-    <Finanace_component :deck="deck" :typeofcard="type"></Finanace_component>
+    <card_component :deck="deck" :typeofcard="type"></card_component>
 </template>
  
 <style>
