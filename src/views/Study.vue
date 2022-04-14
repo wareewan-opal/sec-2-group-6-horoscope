@@ -1,16 +1,8 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-<<<<<<< HEAD
 import study_component from '../component/backstudy_component.vue';
 const deck = ref([])
 const type = ref('study');
-=======
-import Love_component from '../component/card_component.vue';
-
-const deck = ref([])
-const type = ref('study');
-
->>>>>>> d255a0d1bdec59635f29f79d95619c854b3aaefe
 //Get Card
 const getCard = async () => {
   const res = await fetch ('http://localhost:5002/major-arcana')
@@ -21,7 +13,6 @@ const getCard = async () => {
 onBeforeMount(async () =>{
   await getCard()
 })
-<<<<<<< HEAD
 </script>
  
 <template>
@@ -39,25 +30,4 @@ h1{
   text-align: center;
  padding-top: 1em;
 }
-table {
-    padding-right: 10em;
-    margin-right: -10em;
-}
-table, th, td {
-  position: relative;
-  padding-left: 2.5em;
-  margin-left: 9em;
-}
-=======
-
-</script>
- 
-<template>
-    <h1>This's Study</h1>
-    <Love_component :deck="deck" :typeofcard="type"></Love_component>
-</template>
- 
-<style>
-
->>>>>>> d255a0d1bdec59635f29f79d95619c854b3aaefe
 </style>
