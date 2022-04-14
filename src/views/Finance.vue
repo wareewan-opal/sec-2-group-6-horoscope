@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import Finanace_component from '../component/backfinance_component.vue';
+import Finanace_component from '../component/card_component.vue';
 const deck = ref([])
 const type = ref('finance');
 //Get Card
@@ -27,5 +27,6 @@ h1{
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   text-align: center;
+  padding-top: 1em;
 }
 </style>

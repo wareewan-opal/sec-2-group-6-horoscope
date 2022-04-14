@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue'
 defineEmits(['show'])
 defineProps({
   deck:{
@@ -22,34 +23,34 @@ const meaning = (card , type) => {
 <template>
     <table>
       <tr>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
       </tr>
       <tr>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
       </tr>
       <tr>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
       </tr>
       <tr>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
-        <th><img src="../assets/back.jpg" alt="love" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
+        <th><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard" height="250"></th>
       </tr>
     </table>
 </template>

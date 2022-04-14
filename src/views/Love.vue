@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import Love_component from '../component/backlove_component.vue';
+import Love_component from '../component/card_component.vue';
 const deck = ref([])
 const type = ref('love');
 //Get Card
@@ -25,5 +25,6 @@ h1{
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   text-align: center;
+  padding-top: 1em;
   }    
 </style>

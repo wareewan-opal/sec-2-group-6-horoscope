@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import study_component from '../component/backstudy_component.vue';
+import study_component from '../component/card_component.vue';
 const deck = ref([])
 const type = ref('study');
 //Get Card
@@ -28,6 +28,6 @@ h1{
   font-size: 2.3em;
   font-family: 'Cinzel Decorative', cursive;
   text-align: center;
- padding-top: 1em;
+  padding-top: 1em;
 }
 </style>
