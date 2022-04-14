@@ -11,7 +11,7 @@
 </template>
  
 <style>
-html , body {
+/* html , body {
  background-color:#323233;
-}
+} */
 </style>

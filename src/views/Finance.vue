@@ -4,7 +4,6 @@ import card_component from '../component/card_component.vue';
 
 const deck = ref([])
 const type = ref('finance');
-
 //Get Card
 const getCard = async () => {
   const res = await fetch ('http://localhost:5002/major-arcana')
@@ -15,7 +14,6 @@ const getCard = async () => {
 onBeforeMount(async () =>{
   await getCard()
 })
-
 </script>
  
 <template>
