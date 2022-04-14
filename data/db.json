@@ -1,16 +1,52 @@
 {
-    "test1" : [
+    "major-arcana" : [
         {
             "id": 1,
-            "text": "hello"
+            "name": "The Fool",
+            "love": "This card is a person who thinks freely and loves freely. This card is an optimistic person. When you face the question of your love, if you ask the relationship of love, it means you love yourself. Whether our future is painful or bad, but if you ask each other how they feel, you must see the relationship in the context. If a lot of people like us, and then they will like this card, it may mean that we are ready. Even if there are obstacles, even if we already have someone else, if we love someone, the position of this card shows that he may mean I don't think anyone wants to take risks on the other side of the world.",
+            "study": "This means that there is no more commitment, lazy, not serious, not interested.",
+            "health": "Predicted legs, knees, ankles, feet.",
+            "finance": "This means that you can use your money, you can use your love is unnecessary. There are few financial plans, but on the other hand, it is often women's wealth supported by finance."
         },
         {
             "id": 2,
-            "text": "hello2"
+            "name": "The Magician",
+            "love": "This card, from the perspective of relationship, means love, smooth relationship, everything is good, and the ability to solve problems. If you don't understand, it will be a good solution, but if you are an individual, this mage has shortcomings. Because the people on this card are smart, they are all cunning. In this relationship, the skills or methods they use in a relationship may be a little dishonest, but it's not a bad thing. If we flirt, we may have some ideas or plans.",
+            "study": "A smart person can express himself through simple obstacles, rapid learning, good work and good expression.",
+            "health": "This card can predict allergies, respiratory diseases, gout.",
+            "finance": "Is a good money maker, but money."
         },
         {
             "id": 3,
-            "text": "hello3"
+            "name": "The High Priestess",
+            "love": "",
+            "study": "There is chaos, chaos, chaos, mood swings, not focusing on study and work, but if it involves art and entertainment. meaningful",
+            "health": "This card refers to allergies, gout, physical diseases, such as urinary disease and menstrual disease.",
+            "finance": "This card means that you are good at shopping and like unnecessary things, but there is often support."
+        },
+        {
+            "id": 4,
+            "name": "The Empress",
+            "love": "",
+            "study": "Good study and good education. People with this card are usually good.",
+            "health": "It's healthy, but be careful of fat.",
+            "finance": "This card indicates that the complete financial situation means that there is no shortage of funds or money from a female sponsor."
+        },
+        {
+            "id": 5,
+            "name": "The Emperor",
+            "love": "",
+            "study": "A good learner is a knowledgeable person, supervisor or person in charge.",
+            "health": "Healthy, but be careful of stress and hard work, including factories for the elderly, such as high blood pressure. Diabetes, heart disease",
+            "finance": "This card means financial stability and the ability to make money, but there are also people with a lot of money. Because there are a lot of people to take care of."
+        },
+        {
+            "id": 6,
+            "name": "The Hierophant",
+            "love": "",
+            "study": "This card has good study, which means good study and good education. Work means principled work. Compliance with rules and legality",
+            "health": "Healthy, but have back, neck and shoulder diseases, such as sore throat, back pain, etc.",
+            "finance": "This card has no advantage in money, but in general, it is not troublesome."
         }
     ]
 }
