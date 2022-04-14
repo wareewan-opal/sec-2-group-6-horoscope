@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import Love_component from '../component/card_component.vue';
+import card_component from '../component/card_component.vue';
 
 const deck = ref([])
 const type = ref('love');
@@ -19,10 +19,14 @@ onBeforeMount(async () =>{
 </script>
  
 <template>
-    <h1>This's Love</h1>
-    <Love_component :deck="deck" :typeofcard="type"></Love_component>
+    <h1>LOVE HOROSCOPE</h1>
+    <card_component :deck="deck" :typeofcard="type"></card_component>
 </template>
- 
-<style>
 
+<style>
+h1{  
+  font-size: 2.3em;
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  }    
 </style>

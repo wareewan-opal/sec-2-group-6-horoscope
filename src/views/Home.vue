@@ -9,7 +9,7 @@
 <div class="titlename">
   <p>HOROSCOPE</p>
   </div>
-  <table style="width:100%">
+  <table style="width:80%">
   <tr class="category">
     <th><img src="../assets/love.png" alt="love" height="390">
     <router-link :to="{name: 'Love' }"><h5>LOVE HOROSCOPE</h5></router-link></th>
@@ -31,23 +31,26 @@
 <div class="last">
     <img src="../assets/Last.png"  height="90">
 </div>
-
+<div class="titlename2">
+  <h9> &copy; INT203 Client-Side Web Programming || project round 2 : name HOROSCOPE by sec2 group 6</h9>
+  </div>
 </template>
  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@900&family=Kanit:wght@300&family=Zen+Kaku+Gothic+New&display=swap');
 html , body {
  background-color:#323233;
- /* max-width:0.0020em */
- /* max-height: max-content */
+ max-width:100%;
+ max-height: 0em
 }
 table {
-    width: 100%;
+    padding-right: 10em;
+    margin-right: -10em;
 }
 table, th, td {
   position: relative;
   padding-left: 2.5em;
-  margin-left: 12em;
+  margin-left: 9em;
 }
 .category{
    position: relative;
@@ -64,8 +67,6 @@ table, th, td {
   font-family: 'Cinzel Decorative', cursive;
   letter-spacing: 1cm;
   margin-left: 13.25em;
-  /* position: relative; */
-  /* float:none */
 }
 .right{
   position:absolute;
@@ -86,5 +87,16 @@ h5{
 }
 h5:hover{
   color: #e1c68e;
+}
+.copyright{
+  color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: x-small;
+  margin-left: 47em;
+}
+.titlename2{
+  color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
+  margin-left: 19em;
 }
 </style>
