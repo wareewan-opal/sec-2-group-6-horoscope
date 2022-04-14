@@ -5,7 +5,10 @@ import Health from '../views/Health.vue'
 import Finance from '../views/Finance.vue'
 import Home from '../views/Home.vue'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d255a0d1bdec59635f29f79d95619c854b3aaefe
 const history = createWebHistory()
 
 const routes = [
