@@ -71,7 +71,7 @@ const getResult = (deck , type) =>{
   <div>
     <h1>Result Card</h1>
   </div>
-  <button class="button">BACK TO HOROSCOPE HOME</button>
+  <router-link :to="{name: 'Home' }"><button class="button">BACK TO HOROSCOPE HOME</button></router-link>
   <div v-for="(i , index) in selected_card.length">
   <div class="cardresult">
     <img src="../assets/love.png" alt="book" height="300">
