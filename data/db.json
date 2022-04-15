@@ -19,7 +19,7 @@
         {
             "id": 3,
             "name": "The High Priestess",
-            "love": "",
+            "love": "Be honest with others and yourself, and let what is hidden come to the surface. In a relationship,the High Priestess shows increasing intimacy and openness.",
             "study": "There is chaos, chaos, chaos, mood swings, not focusing on study and work, but if it involves art and entertainment. meaningful",
             "health": "This card refers to allergies, gout, physical diseases, such as urinary disease and menstrual disease.",
             "finance": "This card means that you are good at shopping and like unnecessary things, but there is often support."
@@ -27,7 +27,7 @@
         {
             "id": 4,
             "name": "The Empress",
-            "love": "",
+            "love": "The Empress tarot love meaning stems from the element of earth. The person represented by this card can be loving, nurturing and caring, as has financial security or appreciative of beautiful, comforting things. Sometimes, the Empress can point to love and work coming together, either with a coworker, or perhaps a new business venture.When it comes to relationships, this card also heralds a stable, serious and committed relationship. Because the card also represents motherhood, sometimes it can also signal marriage or pregnancy, or at least a new family, in whatever form that means for you.",
             "study": "Good study and good education. People with this card are usually good.",
             "health": "It's healthy, but be careful of fat.",
             "finance": "This card indicates that the complete financial situation means that there is no shortage of funds or money from a female sponsor."
@@ -35,7 +35,7 @@
         {
             "id": 5,
             "name": "The Emperor",
-            "love": "",
+            "love": "The reversed Emperor tarot love meaning can signal some kind of power struggle or a fight for dominance when it comes to love and relationships. Instead of coming together with your different ideas, there may be competitiveness and a desire to just be right.This card can also signal an overbearing partner, whether it's you or your other half. Be careful that you don't give up too much of your personal power, or repress who you are in order to be in this relationship. Alternatively, this card can also signal difficulty emotionally connecting in your relationship or potential relationships.",
             "study": "A good learner is a knowledgeable person, supervisor or person in charge.",
             "health": "Healthy, but be careful of stress and hard work, including factories for the elderly, such as high blood pressure. Diabetes, heart disease",
             "finance": "This card means financial stability and the ability to make money, but there are also people with a lot of money. Because there are a lot of people to take care of."
@@ -43,10 +43,138 @@
         {
             "id": 6,
             "name": "The Hierophant",
-            "love": "",
+            "love": "When it comes to relationship tarot readings, the Hierophant's upright love meaning can point to the effects of conventional religion on love and choosing partners. You could be drawn to partners that are safe, traditional, and respected by your community, and avoid partners that are considered 'taboo'. The Hierophant love meaning in tarot can also represent the more spiritual aspects of love, and a reminder that our partners should be treated morally, and lovingly. Sometimes, this card can also indicate marriage.Relationships affected by the Hierophant card are usually traditional, conventional and socially approved. Partners are likely to share a system of beliefs.",
             "study": "This card has good study, which means good study and good education. Work means principled work. Compliance with rules and legality",
             "health": "Healthy, but have back, neck and shoulder diseases, such as sore throat, back pain, etc.",
             "finance": "This card has no advantage in money, but in general, it is not troublesome."
+        },
+        {
+            "id": 7,
+            "name": "The Lovers",
+            "love": "This card, if you are relationship is a soulmate card and signifies kindred spirits and an intense bond between two people. If you are single, love is coming your way! This will be more than mere infatuation.",
+            "study": "",
+            "health": "Having the right support will help you to get through any health issues. This may be a partner or friend who is offering moral support or a doctor or healthcare provider related to heart health so make sure you are taking good care of your heart when this card appears.",
+            "finance": "Financially, now is a good time to seek financial opportunities as you will be attracting good fortune. "
+        },
+        {
+            "id": 8,
+            "name": "The Chariot",
+            "love": "If you and your partner have been going through a rough patch, you will need to come together, communicate and work hard. The challenges you face are not insurmountable. They just require some hard work and focus to resolve them. If you or your partner has anxiety issues, it is crucial to get these under control as The Chariot Tarot also represents the need to balance the mind and heart to be successful.",
+            "study": "",
+            "health": "If you have been having health issues that have been wearing you down, you will feel a new burst of motivation and energy to tackle them. You may have a long road to recovery ahead but you are strong and you will overcome these challenges.",
+            "finance": "In a financial context, The Chariot is a good omen that can represent overcoming obstacles. If there has been a financial challenge that has seemed insurmountable, this card indicates that this may be a good time to tackle it. It can also represent a big travel or transport related purchase such as buying a car or plane ticket or paying for a holiday etc. "
+        },
+        {
+            "id": 9,
+            "name": "Strength",
+            "love": "You may find yourself in a passionate and fiery romance when you draw the Strength card in a love tarot reading. The intense feelings suggested by this card can indicate both a strong relationship, and also one that can be prone to anger, jealousy or other emotional explosions. There are both pros and cons with this kind of relationship. Alternatively, Strength’s tarot love meaning is one of compassion, empathy and inner strength; you may find that these qualities are bound to attract the partners that you need, or bring you and your existing partner closer together than ever. Empathy may give you greater insight to both yours and your partner’s needs and insecurities. Should you find yourself in an argument or in heated moments, it may be better for you to treat each other with patience and gentleness, rather than allowing your anger to take control.",
+            "study": "The Hierophant is a signifier for sharing knowledge so you may find you get a teacher or mentor who will help you along your career path. Alternatively, you may also become a mentor or trainer of others. Also, now is a good time to take up study in an established educational institution.",
+            "health": "If you are experiencing health issues The Hierophant Tarot card indicates that conventional medicine may be the best route for you at the moment. You would also do well to introduce some sort of health routine such into your daily life e.g. exercising daily or taking vitamin supplements to boost your immune system.",
+            "finance": "If you’ve been working well on controlling impulsive spending, it’s likely that you’ll find yourself in a comfortable position now. So long as you continue to exercise control, you should be fine. You may also be ready to make bold moves in terms of your purchases; perhaps putting your finances to work on something you’ve always been dreaming of."
+        },
+        {
+            "id": 10,
+            "name": "The Hermit",
+            "love": "In a love context, if you are single The Hermit Tarot card represents coming out the other side of a period of loneliness and solitude that may have been needed to recuperate from past heartbreak or a bad breakup. You will soon be ready for a fresh start. It can also indicate celibacy or chastity.",
+            "study": "Like the Hierophant, the Hermit represents teaching and/or study. Mentorship and/or being mentored. Counselling and/or receiving counsel. As the Hermit, you may be beginning or continuing your studies, or you may be assisting someone else.",
+            "health": "The Hermit in a health context indicates overdoing things may lead to health issues. If you find that you're rushed off your feet, never having a minute to take a breath, The Hermit suggests that if you don't make time for yourself to rest and reboot your health may suffer. Take a break.",
+            "finance": "You may be coming to the realization that money doesn’t bring you happiness right now. This may be a time with less focus on material things, and more focus on trying to understand where you can truly find fulfillment."
+        },
+        {
+            "id": 11,
+            "name": "Wheel Of Fortune",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 12,
+            "name": "Justice",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 13,
+            "name": "The Hanged Man",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 14,
+            "name": "Death",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 15,
+            "name": "Temperanc",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 16,
+            "name": "The Devil",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 17,
+            "name": "The Tower",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 18,
+            "name": "The Star",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 19,
+            "name": "The Moon",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 20,
+            "name": "The Sun",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 21,
+            "name": "Judgement",
+            "love": "P'Arm",
+            "study": "",
+            "health": "",
+            "finance": ""
+        },
+        {
+            "id": 22,
+            "name": "The World",
+            "love": "",
+            "study": "",
+            "health": "",
+            "finance": ""
         }
     ]
 }
