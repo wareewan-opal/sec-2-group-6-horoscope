@@ -12,20 +12,20 @@ defineProps({
 })
 const selected_card = ref([]);
 const result = ref([]);
-const status = ref('none')
+const status = ref('select')
 
 const select = (deck) => {
   while (true) {
+    console.log('Start Loop');
     if (selected_card.value.length <= 2) {
+      console.log('This if');
       let num = Math.floor(Math.random() * deck.length)
       if (!selected_card.value.includes(num)) {
         selected_card.value.push(num)
-        status.value = 'popup';
+        if(selected_card.value.length == 3){status.value = 'popup' }
         break;
       }
-    } else {
-      break; 
-    }
+    } else { break; }
   }
 }
 const getResult = (deck , type) =>{
@@ -41,11 +41,12 @@ const getResult = (deck , type) =>{
 </script>
  
 <template>
-  <table class="cardselect">
+<table class="cardselect" v-show="status == 'select'">
     <tr v-for="col in 4" class="colselect">
       <th v-for="row in 6">
-        <img v-show="selected_card.length <= 2" :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard"
+        <div class="zoom"><img :src="`src/assets/back-card/back_${typeofcard}.png`" :alt="typeofcard"
           height="250" @click="select(deck , typeofcard)">
+        </div>
       </th>
     </tr>
   </table>
@@ -66,7 +67,7 @@ const getResult = (deck , type) =>{
   </div>
   <div v-if="status == 'result'">
   <div class="sun">
-    <img src="../assets/sun2.png" height="150">
+    <img src="../assets/category/sun2.png" height="150">
   </div>
   <div>
     <h1>Result Card</h1>
@@ -74,7 +75,7 @@ const getResult = (deck , type) =>{
   <router-link :to="{name: 'Home' }"><button class="button">BACK TO HOROSCOPE HOME</button></router-link>
   <div v-for="(i , index) in selected_card.length">
     <div class="cardrandom">
-        <img src="../assets/love.png" alt="book" height="300">
+        <img :src="`src/assets/front-card/${result[index].name}.jpeg`" :alt="`${result[index].name}`" height="300">
     </div>
   <div class="cardresult">
     <div class="model-mask">
@@ -93,10 +94,12 @@ const getResult = (deck , type) =>{
  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@900&family=Inconsolata:wght@400;800&family=Kanit:wght@300&family=Zen+Kaku+Gothic+New&display=swap');
-.cardselect {
-  position: relative;
+.cardselect{
+  position: static;
+  margin: 0em 40em 80em 7em;
+  width: 80%;
+  height: 200%;
 }
-
 .modal-mask {
   position: fixed;
   /* z-index: 9998; */
@@ -234,5 +237,16 @@ h1 {
   margin-top: 4em;
   /* position: relative; */
   margin-left: 20em;
+}
+
+.zoom {
+  padding: -5px;
+  transition: transform .5s; /* Animation */
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.2);
 }
 </style>
