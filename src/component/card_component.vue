@@ -12,20 +12,20 @@ defineProps({
 })
 const selected_card = ref([]);
 const result = ref([]);
-const status = ref('none')
+const status = ref('select')
 
 const select = (deck) => {
   while (true) {
+    console.log('Start Loop');
     if (selected_card.value.length <= 2) {
+      console.log('This if');
       let num = Math.floor(Math.random() * deck.length)
       if (!selected_card.value.includes(num)) {
         selected_card.value.push(num)
-        status.value = 'popup';
+        if(selected_card.value.length == 3){status.value = 'popup' }
         break;
       }
-    } else {
-      break; 
-    }
+    } else { break; }
   }
 }
 const getResult = (deck , type) =>{
@@ -41,11 +41,12 @@ const getResult = (deck , type) =>{
 </script>
  
 <template>
-  <table class="cardselect">
+  <table class="cardselect" v-show="status == 'select'">
     <tr v-for="col in 4" class="colselect">
       <th v-for="row in 6">
-        <img v-show="selected_card.length <= 2" :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard"
+        <div class="zoom"><img :src="`src/assets/back_${typeofcard}.png`" :alt="typeofcard"
           height="250" @click="select(deck , typeofcard)">
+        </div>
       </th>
     </tr>
   </table>
@@ -67,9 +68,6 @@ const getResult = (deck , type) =>{
   <div v-if="status == 'result'">
   <div class="sun">
     <img src="../assets/sun2.png" height="150">
-  </div>
-  <div class="left">
-    <img src="../assets/left.png" alt="left" height="200">
   </div>
   <div>
     <h1>Result Card</h1>
@@ -175,14 +173,6 @@ h1 {
   margin-left: 1em;
 }
 
-.right {
-  margin-top: -76em
-}
-
-.left {
-  margin-top: -76em
-}
-
 .cardresult {
   margin-top: 5em;
   margin-left: 24.25em;
@@ -246,4 +236,16 @@ h1 {
   /* position: relative; */
   margin-left: 20em;
 }
+
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
+
 </style>
