@@ -69,7 +69,10 @@ const getResult = (deck , type) =>{
     <img src="../assets/sun2.png" height="150">
   </div>
   <div class="left">
-    <img src="../assets/left.png" alt="left" height="200">
+    <img src="../assets/left.png" alt="left" height="550">
+  </div>
+    <div class="right">
+    <img src="../assets/right.png" alt="right" height="550">
   </div>
   <div>
     <h1>Result Card</h1>
@@ -175,12 +178,13 @@ h1 {
   margin-left: 1em;
 }
 
-.right {
-  margin-top: -76em
+.left{
+    padding-right: 12em;
+  padding-top: 25em;
 }
-
-.left {
-  margin-top: -76em
+.right{
+  padding-right: 12em;
+  padding-top: 25em;
 }
 
 .cardresult {
