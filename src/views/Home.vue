@@ -10,13 +10,13 @@
   </div>
   <table style="width:80%">
   <tr class="category">
-    <th><img src="../assets/love.png" alt="love" height="390">
+    <th><router-link :to="{name: 'Love' }"><img src="../assets/love.png" alt="love" height="390"></router-link>
     <router-link :to="{name: 'Love' }"><h5>LOVE HOROSCOPE</h5></router-link></th>
-    <th><img src="../assets/study.png" alt="book" height="390">
+    <th><router-link :to="{name: 'Study' }"><img src="../assets/study.png" alt="book" height="390"></router-link>
     <router-link :to="{name: 'Study' }"><h5>STUDY HOROSCOPE</h5></router-link></th>
-    <th><img src="../assets/Health.png" alt="book" height="390">
+    <th><router-link :to="{name: 'Health' }"><img src="../assets/Health.png" alt="book" height="390"></router-link>
     <router-link :to="{name: 'Health' }"><h5>HEALTH HOROSCOPE</h5></router-link></th>
-    <th> <img src="../assets/finance.png" alt="book" height="390">
+    <th><router-link :to="{name: 'Finance' }"><img src="../assets/finance.png" alt="book" height="390"></router-link>
     <router-link :to="{name: 'Finance' }"><h5>FINANCE HOROSCOPE</h5></router-link></th>
   </tr>
   </table>
