@@ -32,7 +32,7 @@ const routes = [
         path: '/finance-horoscope',
         name: 'Finance',
         component: Finance 
-    }
+    },
 ]
 const router = createRouter({ history,routes })
 export default router
