@@ -50,12 +50,12 @@ const getResult = (deck , type) =>{
     </tr>
   </table>
   <div v-show="status == 'popup'">
-    <div class="modal-mask">
+     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
-          <div class="modal-header">
+          <!-- <div class="modal-header"> -->
             <h3>HOROSCOPE</h3>
-          </div>
+          <!-- </div> -->
           <div class="modal-body"> you're already picked 3 cards </div>
           <div class="modal-button">
             <button class="button" @click="getResult(deck , typeofcard)">OK</button>
@@ -68,17 +68,23 @@ const getResult = (deck , type) =>{
   <div class="sun">
     <img src="../assets/sun2.png" height="150">
   </div>
+  <div class="left">
+    <img src="../assets/left.png" alt="left" height="200">
+  </div>
   <div>
     <h1>Result Card</h1>
   </div>
   <router-link :to="{name: 'Home' }"><button class="button">BACK TO HOROSCOPE HOME</button></router-link>
   <div v-for="(i , index) in selected_card.length">
+    <div class="cardrandom">
+        <img src="../assets/love.png" alt="book" height="300">
+    </div>
   <div class="cardresult">
-    <img src="../assets/love.png" alt="book" height="300">
     <div class="model-mask">
       <div class="model-wrapper">
         <div class="model-container">
-          <div class="model-body"> Card Name : {{ result[index].name }} </div>
+          <div class="model-body" style="font-size: larger;"> Card Name : {{ result[index].name }} </div>
+          <br>
           <div class="model-body"> Result card : {{ result[index].mean }}</div>
         </div>
       </div>
@@ -89,6 +95,7 @@ const getResult = (deck , type) =>{
 </template>
  
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@900&family=Inconsolata:wght@400;800&family=Kanit:wght@300&family=Zen+Kaku+Gothic+New&display=swap');
 .cardselect {
   position: relative;
 }
@@ -117,11 +124,11 @@ const getResult = (deck , type) =>{
   border-radius: 20px;
   box-shadow: 0 2px 8px white
 }
-.modal-header h3 {
+h3 {
   margin-top: 1em;
   color: #e1c68e;
   font-family: 'Cinzel Decorative', cursive;
-  margin-left: 1em;
+  margin-left: 8.25em;
   position: fixed;
 }
 
@@ -130,6 +137,8 @@ const getResult = (deck , type) =>{
   margin-left: -2em;
   text-align: center;
   padding-left: 10px;
+  font-size: 1em;
+  margin-top: 3em;
 }
 
 .modal-button {
@@ -190,20 +199,23 @@ h1 {
 }
 
 .model-container {
-  max-width: max-content;
-  margin: 10px auto;
-  padding: 50px 250px;
+  /* max-width: max-content; */
+  margin: 60px auto;
+  padding: 60px 100px;
   background-color: #FFF5D1;
   font-family: 'Cinzel Decorative', cursive;
   border-radius: 20px;
-  box-shadow: 0 2px 8px #e1c68e
+  box-shadow: 0 2px 8px #e1c68e;
+  position: relative;
+  margin-right: 12em;
+  margin-top: -10em;
 }
 
 .model-body {
-  font-family: 'Cinzel Decorative', cursive;
-  margin-left: -1em;
-  text-align: center;
-  padding-left: 10px;
+  font-family: 'Inconsolata', monospace;
+  /* margin-left: -15em; */
+  /* text-align: center; */
+  /* padding-left: -50px; */
 }
 
 .button {
@@ -226,5 +238,12 @@ h1 {
   box-shadow: 0 2px 8px white;
   background-color: thistle;
   color: slateblue;
+}
+
+.cardrandom{
+  margin-right: 12em;
+  margin-top: 4em;
+  /* position: relative; */
+  margin-left: 20em;
 }
 </style>
