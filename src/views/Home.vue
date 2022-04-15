@@ -20,10 +20,10 @@
     <router-link :to="{name: 'Finance' }"><h5>FINANCE HOROSCOPE</h5></router-link></th>
   </tr>
   </table>
-  <div class="left">
+  <div class="left1">
   <img src="../assets/left.png" height="550">
 </div>
-<div class="right">
+<div class="right1">
   <img src="../assets/right.png" height="550">
 </div>
 <div class="last">
@@ -66,12 +66,12 @@ table, th, td {
   letter-spacing: 1cm;
   margin-left: 13.25em;
 }
-.right{
+.right1{
   position:absolute;
   margin-left: 160ex;
   margin-top: -40em;
 }
-.left{
+.left1{
   position:absolute;
   margin-top: -40em;
 }
