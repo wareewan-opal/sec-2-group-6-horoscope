@@ -12,7 +12,6 @@
   <tr class="category">
     <th><img src="../assets/love.png" alt="love" height="390">
     <router-link :to="{name: 'Love' }"><h5>LOVE HOROSCOPE</h5></router-link></th>
-    
     <th><img src="../assets/study.png" alt="book" height="390">
     <router-link :to="{name: 'Study' }"><h5>STUDY HOROSCOPE</h5></router-link></th>
     <th><img src="../assets/Health.png" alt="book" height="390">
