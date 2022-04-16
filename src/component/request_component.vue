@@ -26,27 +26,31 @@ const generateID = (array)=>{
   </div>
   <div class="wish">
     <textarea cols="70" rows="10" placeholder="   input your wish..." v-model="detailWish"></textarea>
-    <div class="create">
-      <button @click="$emit('create' , newWish(arrayofwish))"> Create </button> &nbsp;
-      <router-link :to="{name: 'Home' }"><button>BACK TO HOROSCOPE HOME</button></router-link>
-    </div>
+   </div> 
+    <button class="create" @click="$emit('create' , newWish(arrayofwish))">Create</button>
+    <router-link :to="{name: 'Home' }"><button class="button2">BACK TO HOROSCOPE HOME</button></router-link>
 <div class="text">
      <div class="show">
         <ul v-for="(wish) in arrayofwish">
                 <li>
                   <b>Wish from </b>{{wish.name}}
-                    <p><b>Detail :</b> {{wish.noteDetail}} <div class="delete"><button @click="$emit('delete',wish.id)">Delete Wish from :{{ wish.name}}</button></div> </p>
-                </li>
+                    <p><b>Detail :</b> {{wish.noteDetail}}</p>
+                </li>&nbsp;&nbsp;
+          <button class="delete" @click="$emit('delete',wish.id)">Delete Wish from :{{ wish.name}}</button>&nbsp;
+          <button class="edit" @click="$emit('delete',wish.id)">Edit Wish from :{{ wish.name}}</button>
         </ul>
         </div>
   </div>
-      
-</div>
 
 </template>
  
 <style>
-
+.text{
+    position: absolute;
+    margin-top: 1.25em;
+    padding-left: 32.5em;
+    margin-left: -13em;
+}
 .name{
   margin-left: 30em;
   font-family: 'Inconsolata', monospace;
@@ -60,7 +64,7 @@ const generateID = (array)=>{
   margin-left: 10em;
   margin-top: 1em;
   background-color: antiquewhite;
-  border-radius: 10px;
+  border-radius: 12px;
   font-family: 'Inconsolata', monospace;
   margin-right: 40em;
   box-shadow: 0 2px 8px white;
@@ -71,19 +75,51 @@ const generateID = (array)=>{
   padding-top: 1em;
 }
 .delete{
+  font-size: smaller;
   border-radius: 12px;
-  /* margin: 4px 2px ; */
-  cursor: pointer; 
-  /* padding: 10px 30px; */
   text-align: center;
-  margin-left: 18em;
+  text-decoration: none;
+  background-color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
   color: black;
-  font-family: 'Inconsolata', monospace;
 }
 .create{
-  margin-left: 10em;
-  margin-top: 1em;
   border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
+  color: black;
+  display: inline-block;
+  margin-inline-start: 44em;
+  padding: 10px 30px;
+  margin-top: 1em;
+}
+.edit{
+  font-size: smaller;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
+  color: black;
+}
+.button2 {
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e1c68e;
+  font-family: 'Cinzel Decorative', cursive;
+  color: black;
+  display: inline-block;
+  margin-inline-start: 38em;
+  padding: 10px 30px;
+  margin-top: 1em;
+}
+.button2:hover{
+  box-shadow: 0 2px 8px white;
+  background-color: thistle;
+  color: slateblue;
 }
 
 </style>
