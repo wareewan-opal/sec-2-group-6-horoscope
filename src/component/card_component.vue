@@ -70,10 +70,10 @@ const getResult = (deck , type) =>{
   <div>
     <h1>Result Card</h1>
   </div>
-  <router-link :to="{name: 'Home' }"><button class="button">BACK TO HOROSCOPE HOME</button></router-link>
+  <router-link :to="{name: 'Home' }"><button class="buttonback">BACK TO HOROSCOPE HOME</button></router-link>
   <div v-for="(i , index) in selected_card.length">
     <div class="cardrandom">
-        <img :src="`src/assets/front-card/${result[index].name}.jpeg`" :alt="`${result[index].name}`" height="300">
+        <img :src="`src/assets/front-card/${result[index].name}.jpeg`" :alt="`${result[index].name}`" height="350">
     </div>
   <div class="cardresult">
     <div class="model-mask">
@@ -96,7 +96,7 @@ const getResult = (deck , type) =>{
   position: static;
   margin: 0em 40em 80em 7em;
   width: 80%;
-  height: 200%;
+  height: 180%;
 }
 .modal-mask {
   position: fixed;
@@ -196,18 +196,40 @@ h1 {
 
 .button {
   border-radius: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
+  margin: 4px 2px ;
+  cursor: pointer; 
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-inline-start: 53.5%;
+  margin-inline-end: 46.5%;
   margin-left: 38em;
   margin-top: 1em;
   background-color: #e1c68e;
   color: 00000;
   font-family: 'Cinzel Decorative', cursive;
   color: black;
+}
+
+.buttonback {
+  border-radius: 12px;
+  margin: 4px 2px ;
+  cursor: pointer; 
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 38em;
+  margin-top: 1em;
+  background-color: #e1c68e;
+  color: 00000;
+  font-family: 'Cinzel Decorative', cursive;
+  color: black;
+}
+.buttonback:hover{
+    box-shadow: 0 2px 8px white;
+  background-color: thistle;
+  color: slateblue;
 }
 
 .button:hover {
@@ -229,6 +251,7 @@ h1 {
   width: 125px;
   height: 125px;
   margin: 0 auto;
+  margin-top: 1em;
 }
 .zoom:hover {
   transform: scale(1.2);

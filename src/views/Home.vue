@@ -2,8 +2,10 @@
 </script>
  
 <template>
+<div class="container">
 <div class="sun">
-  <img src="../assets/category/sun2.png" height="150">
+  <router-link :to="{ name: 'RequestSun' }"><img src="../assets/category/sun.png" height="150"></router-link>
+</div>
 </div>
 <div class="titlename">
   <p>HOROSCOPE</p>
@@ -57,7 +59,7 @@ table, th, td {
 .sun{
   position: relative;
   margin-top: 0.5em;
-  margin-left: 42em;
+  margin-left: 35em;
 }
 .titlename{
   color: #e1c68e;
@@ -96,5 +98,9 @@ h5:hover{
   color: #e1c68e;
   font-family: 'Cinzel Decorative', cursive;
   margin-left: 19em;
+}
+.sun:hover img{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 </style>

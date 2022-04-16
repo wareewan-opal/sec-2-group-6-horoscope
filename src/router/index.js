@@ -4,6 +4,7 @@ import Study from '../views/Study.vue'
 import Health from '../views/Health.vue'
 import Finance from '../views/Finance.vue'
 import Home from '../views/Home.vue'
+import RequestSun from '../views/RequestSun.vue'
 
 const history = createWebHistory()
 
@@ -33,6 +34,11 @@ const routes = [
         name: 'Finance',
         component: Finance 
     },
+    {
+        path: '/requst-to-sun',
+        name: 'RequestSun',
+        component: RequestSun
+    }
 ]
 const router = createRouter({ history,routes })
 export default router
