@@ -3,31 +3,31 @@
  
 <template>
 <div class="sun">
-  <img src="../assets/sun2.png" height="150">
+  <img src="../assets/category/sun2.png" height="150">
 </div>
 <div class="titlename">
   <p>HOROSCOPE</p>
   </div>
   <table style="width:80%">
   <tr class="category">
-    <th><router-link :to="{name: 'Love' }"><img src="../assets/love.png" alt="love" height="390"></router-link>
+    <th><router-link :to="{name: 'Love' }"><img src="../assets/category/love.png" alt="love" height="390"></router-link>
     <router-link :to="{name: 'Love' }"><h5>LOVE HOROSCOPE</h5></router-link></th>
-    <th><router-link :to="{name: 'Study' }"><img src="../assets/study.png" alt="book" height="390"></router-link>
+    <th><router-link :to="{name: 'Study' }"><img src="../assets/category/study.png" alt="study" height="390"></router-link>
     <router-link :to="{name: 'Study' }"><h5>STUDY HOROSCOPE</h5></router-link></th>
-    <th><router-link :to="{name: 'Health' }"><img src="../assets/Health.png" alt="book" height="390"></router-link>
+    <th><router-link :to="{name: 'Health' }"><img src="../assets/category/Health.png" alt="health" height="390"></router-link>
     <router-link :to="{name: 'Health' }"><h5>HEALTH HOROSCOPE</h5></router-link></th>
-    <th><router-link :to="{name: 'Finance' }"><img src="../assets/finance.png" alt="book" height="390"></router-link>
+    <th><router-link :to="{name: 'Finance' }"><img src="../assets/category/finance.png" alt="finance" height="390"></router-link>
     <router-link :to="{name: 'Finance' }"><h5>FINANCE HOROSCOPE</h5></router-link></th>
   </tr>
   </table>
-  <div class="left">
-  <img src="../assets/left.png" height="550">
+  <div class="left1">
+  <img src="../assets/category/left.png" height="550">
 </div>
-<div class="right">
-  <img src="../assets/right.png" height="550">
+<div class="right1">
+  <img src="../assets/category/right.png" height="550">
 </div>
 <div class="last">
-    <img src="../assets/Last.png"  height="90">
+    <img src="../assets/category/Last.png"  height="90">
 </div>
 <div class="titlename2">
   <h9> &copy; INT203 Client-Side Web Programming || project round 2 : name HOROSCOPE by sec2 group 6</h9>
@@ -66,12 +66,12 @@ table, th, td {
   letter-spacing: 1cm;
   margin-left: 13.25em;
 }
-.right{
+.right1{
   position:absolute;
   margin-left: 160ex;
   margin-top: -40em;
 }
-.left{
+.left1{
   position:absolute;
   margin-top: -40em;
 }
