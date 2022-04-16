@@ -48,14 +48,14 @@ onBeforeMount(async () =>{
   <h1>Your request to the sun.</h1>
   <h6>May everyone's wishes come true and fulfilled.</h6>
   <request_componentVue :arrayofwish="wish" @delete="deleteWish" @create="createNewWish"></request_componentVue>
-  <router-link :to="{ name: 'Home' }"><button class="button2">BACK TO HOROSCOPE</button></router-link>
+  <!-- <router-link :to="{ name: 'Home' }"><button class="button2">BACK TO HOROSCOPE</button></router-link> -->
 </template>
  
 <style>
 .text{
-    position: fixed;
-    padding-left: 27.5em;
-    padding-top: 2em;
+    position: absolute;
+    /* margin-left: 5em; */
+    margin-left: -11em;
 }
 h6{
   color: #e1c68e;
