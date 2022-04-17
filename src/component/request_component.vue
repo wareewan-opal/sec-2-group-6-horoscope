@@ -80,7 +80,8 @@ const generateID = (array)=>{
   text-align: center;
   text-decoration: none;
   background-color: #e1c68e;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Inconsolata', monospace;
+    font-family: 'Cinzel Decorative', cursive;
   color: black;
 }
 .create{
