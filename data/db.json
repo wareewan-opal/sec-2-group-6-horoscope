@@ -1,7 +1,7 @@
 {
   "selected": [
     {
-      "category": "love",
+      "category": "study",
       "id": 1
     }
   ],
@@ -213,6 +213,11 @@
       "name": "baimorn",
       "noteDetail": "get A+ and happyyy",
       "id": 6
+    },
+    {
+      "name": "Game",
+      "noteDetail": "Want to play Valorant\n",
+      "id": 7
     }
   ]
 }
