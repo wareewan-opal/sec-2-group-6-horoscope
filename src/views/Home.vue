@@ -3,7 +3,7 @@
  
 <template>
 <div class="container">
-<div class="sun">
+<div class="sun1">
   <router-link :to="{ name: 'RequestSun' }"><img src="../assets/category/sun.png" height="150"></router-link>
 </div>
 </div>
@@ -56,7 +56,7 @@ table, th, td {
    position: relative;
    margin-left: -10em;
 }
-.sun{
+.sun1{
   position: relative;
   margin-top: 0.5em;
   margin-left: 35em;
@@ -99,7 +99,7 @@ h5:hover{
   font-family: 'Cinzel Decorative', cursive;
   margin-left: 19em;
 }
-.sun:hover img{
+.sun1:hover img{
   cursor: pointer;
   transform: scale(1.1);
 }

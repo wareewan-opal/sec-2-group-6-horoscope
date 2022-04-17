@@ -16,7 +16,9 @@ const status = ref('select')
 
 const select = (deck) => {
   while (true) {
+    console.log('Start Loop');
     if (selected_card.value.length <= 2) {
+      console.log('This if');
       let num = Math.floor(Math.random() * deck.length)
       if (!selected_card.value.includes(num)) {
         selected_card.value.push(num)
@@ -65,7 +67,7 @@ const getResult = (deck , type) =>{
   </div>
   <div v-if="status == 'result'">
   <div class="sun">
-    <img src="../assets/category/sun2.png" height="150">
+    <img src="../assets/category/sun.png" height="150">
   </div>
   <div>
     <h1>Result Card</h1>
@@ -227,7 +229,7 @@ h1 {
   color: black;
 }
 .buttonback:hover{
-    box-shadow: 0 2px 8px white;
+  box-shadow: 0 2px 8px white;
   background-color: thistle;
   color: slateblue;
 }
@@ -247,7 +249,7 @@ h1 {
 
 .zoom {
   padding: -5px;
-  transition: transform .2s; /* Animation */
+  transition: transform .5s; /* Animation */
   width: 125px;
   height: 125px;
   margin: 0 auto;

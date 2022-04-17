@@ -1,6 +1,7 @@
 <script setup>
 import { ref , onBeforeMount} from 'vue';
 import request_componentVue from '../component/request_component.vue';
+import Wishlist_componentVue from '../component/Wishlist_component.vue';
 
 let wish = ref([])
 
@@ -17,13 +18,11 @@ const deleteWish = async (wishID) => {
   const res = await fetch (`http://localhost:5002/requesttosun/${wishID}` , {method: 'delete'})
   if(res.status === 200){
     (wish.value = wish.value.filter((wish) => wish.id !== wishID))
-    console.log(res);
   }
   }
 }
 
 const createNewWish = async (newWish) => {
-  console.log(newWish)
   const res = await fetch('http://localhost:5002/requesttosun', {
     method: 'POST',
     headers: {
@@ -37,26 +36,44 @@ const createNewWish = async (newWish) => {
   }
 }
 
+const editingNote = ref({})
+
+const toEditingNode = async (editNote) => {
+  editingNote.value = editNote
+  console.log(editingNote.value);
+}
+
 onBeforeMount(async () =>{
   await getWish()
 })
 
+const modifyWish = async (wishs) => {
+  const res = await fetch(`http://localhost:5002/requesttosun/${wishs.id}`, {
+    method: 'PUT',
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: JSON.stringify({ name: wishs.name , noteDetail: wishs.noteDetail})
+  })
+  if(res.status === 200){
+    const modifyWish = await res.json()
+    wish.value = wish.value.map((wish) =>
+    wish.id === modifyWish.id ? { id: modifyWish.id , name: modifyWish.name , noteDetail: modifyWish.noteDetail } : wish
+    ) 
+    console.log('sucessfully');
+  }else {console.log('fail');}
+}
 
 </script>
  
 <template>
   <h1>Your request to the sun.</h1>
   <h6>May everyone's wishes come true and fulfilled.</h6>
-  <request_componentVue :arrayofwish="wish" @delete="deleteWish" @create="createNewWish"></request_componentVue>
-  <router-link :to="{ name: 'Home' }"><button class="button2">BACK TO HOROSCOPE</button></router-link>
+  <request_componentVue :arrayofwish="wish" @create="createNewWish" @update="modifyWish" :currentNote="editingNote"></request_componentVue>
+  <Wishlist_componentVue :arrayofwish="wish" @delete="deleteWish" @edit="toEditingNode"></Wishlist_componentVue>
 </template>
  
 <style>
-.text{
-    position: fixed;
-    padding-left: 27.5em;
-    padding-top: 2em;
-}
 h6{
   color: #e1c68e;
   font-size: 1em;
@@ -64,24 +81,5 @@ h6{
   text-align: center;
   padding-top: 1em;
   margin-left: 1em;
-}
-.button2 {
-  border-radius: 12px;
-  margin: 4px 2px ;
-  cursor: pointer; 
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 42.5em;
-  margin-top: 20em;
-  background-color: #e1c68e;
-  color: 00000;
-  font-family: 'Cinzel Decorative', cursive;
-  color: black;
-}
-.button2:hover{
-  box-shadow: 0 2px 8px white;
-  background-color: thistle;
-  color: slateblue;
 }
 </style>
