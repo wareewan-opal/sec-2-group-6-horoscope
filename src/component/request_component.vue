@@ -21,7 +21,7 @@ const newWish  = computed(() => {
     <textarea cols="70" rows="10" placeholder="   input your wish..." v-model="newWish.noteDetail"></textarea>
    </div> 
     <button class="create" @click="$emit('create' , newWish)">Create</button>
-    <button v-if="newWish.id > 0" class="create" @click="$emit('update' , newWish)">Updata</button>
+    <button class="update" v-if="newWish.id > 0" @click="$emit('update' , newWish)">Updata</button>
     <router-link :to="{name: 'Home' }"><button class="button2">BACK TO HOROSCOPE HOME</button></router-link>
 
 </template>
@@ -63,10 +63,11 @@ const newWish  = computed(() => {
   text-decoration: none;
   background-color: #e1c68e;
   font-family: 'Inconsolata', monospace;
-    font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   color: black;
+  padding: 5px 15px;
 }
-.create{
+.create , .update{
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
@@ -86,6 +87,7 @@ const newWish  = computed(() => {
   background-color: #e1c68e;
   font-family: 'Cinzel Decorative', cursive;
   color: black;
+  padding: 5px 15px;
 }
 .button2 {
   border-radius: 12px;
@@ -99,7 +101,7 @@ const newWish  = computed(() => {
   padding: 10px 30px;
   margin-top: 1em;
 }
-.button2:hover{
+.button2:hover , .update:hover{
   box-shadow: 0 2px 8px white;
   background-color: thistle;
   color: slateblue;
