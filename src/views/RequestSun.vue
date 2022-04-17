@@ -61,7 +61,10 @@ const modifyWish = async (wishs) => {
     wish.id === modifyWish.id ? { id: modifyWish.id , name: modifyWish.name , noteDetail: modifyWish.noteDetail } : wish
     ) 
     console.log('sucessfully');
-  }else {console.log('fail');}
+  }else {
+    console.log('fail');
+    }
+    editingNote.value=""
 }
 
 </script>
