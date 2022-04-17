@@ -1,6 +1,6 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import card_component from '../component/card_component.vue';
+import card_component from '../components/card_component.vue';
 const deck = ref([])
 const type = ref('health');
 //Get Card

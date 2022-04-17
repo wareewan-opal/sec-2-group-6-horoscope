@@ -1,7 +1,7 @@
 <script setup>
 import { ref , onBeforeMount} from 'vue';
-import request_componentVue from '../component/request_component.vue';
-import Wishlist_componentVue from '../component/Wishlist_component.vue';
+import request_componentVue from '../components/request_component.vue';
+import Wishlist_componentVue from '../components/Wishlist_component.vue';
 
 let wish = ref([])
 
