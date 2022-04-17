@@ -1,11 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Love from '../views/Love.vue'
-import Study from '../views/Study.vue'
-import Health from '../views/Health.vue'
-import Finance from '../views/Finance.vue'
-import Home from '../views/Home.vue'
-import RequestSun from '../views/RequestSun.vue'
-
+import selectcard from '../views/selectcard.vue'
+import Home from '../views/home.vue'
+import RequestSun from '../views/requestSun.vue'
 const history = createWebHistory()
 
 const routes = [
@@ -15,24 +11,9 @@ const routes = [
         component: Home 
     },
     {
-        path: '/love-horoscope',
-        name: 'Love',
-        component: Love
-    },
-    {
-        path: '/study-horoscope',
-        name: 'Study',
-        component: Study
-    },
-    {
-        path: '/health-horoscope',
-        name: 'Health',
-        component: Health 
-    },
-    {
-        path: '/finance-horoscope',
-        name: 'Finance',
-        component: Finance 
+        path: '/select-card',
+        name: 'selectcard',
+        component: selectcard
     },
     {
         path: '/requst-to-sun',

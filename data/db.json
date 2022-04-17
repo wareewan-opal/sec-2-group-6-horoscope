@@ -1,4 +1,10 @@
 {
+  "selected": [
+    {
+      "category": "love",
+      "id": 1
+    }
+  ],
   "major-arcana": [
     {
       "id": 1,
@@ -180,7 +186,7 @@
   "requesttosun": [
     {
       "name": "DEAR",
-      "noteDetail": "I WISH EVERYONE HAPPINESS WITH SOMEONE.",
+      "noteDetail": "I WISH EVERYONE HAPPINESS WITH SOMEONE!",
       "id": 1
     },
     {
@@ -205,7 +211,7 @@
     },
     {
       "name": "baimorn",
-      "noteDetail": "get A+++++ and happyyy",
+      "noteDetail": "get A+ and happyyy",
       "id": 6
     }
   ]
