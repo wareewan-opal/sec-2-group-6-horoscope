@@ -57,7 +57,7 @@ Project นี้เป็นส่วนหนึ่งของรายวิ
 - Step 4 : ถ้าผู้ใช้งานรู้สึกพึงพอใจกับคำขอหรือคำอธิฐานของตัวเองแล้ว สามารถกดกลับไปที่หน้าแรกได้โดยกดปุ่ม BACK TO HOROSCOPE HOME
 
 ### Example Edit and Delete
-![Imgur](https://imgur.com/AUyuOr1.jpg)
+![Imgur](https://imgur.com/eQ82XRM.jpg)
 
 ## Components
 - Wishlist_component.vue ใช้สำหรับแสดงผลในส่วนของคำขอหรือคำอธิฐานที่เก็บอยู่ใน backend สามารถแก้ไขข้อมูลและลบข้อมูลได้
