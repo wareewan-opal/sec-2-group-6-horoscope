@@ -46,7 +46,6 @@ Project นี้เป็นส่วนหนึ่งของรายวิ
 ### Exmaple Result Popup:
 ![Imgur](https://imgur.com/ceIc7iJ.jpg)
 ### Exmaple Horoscope Result :
-![Imgur](https://imgur.com/hqLG8Fu.jpg)
 ![Imgur](https://imgur.com/mh9ioQu.jpg)
 
 ## Any Function (Sun Wish)
