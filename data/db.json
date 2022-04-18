@@ -1,4 +1,10 @@
 {
+  "selected": [
+    {
+      "category": "study",
+      "id": 1
+    }
+  ],
   "major-arcana": [
     {
       "id": 1,
@@ -180,7 +186,7 @@
   "requesttosun": [
     {
       "name": "DEAR",
-      "noteDetail": "I WISH EVERYONE HAPPINESS WITH SOMEONE1 .",
+      "noteDetail": "I WISH GO TO BED......\n",
       "id": 1
     },
     {
@@ -205,18 +211,13 @@
     },
     {
       "name": "baimorn",
-      "noteDetail": "get A+++++ and happyyy",
+      "noteDetail": "get A+ and happyyy",
       "id": 6
     },
     {
-      "name": "asdasd",
-      "noteDetail": "asdasdad",
-      "id": 9
-    },
-    {
-      "name": "ddfsdf",
-      "noteDetail": "dsfdsfdsf",
-      "id": 10
+      "name": "Game",
+      "noteDetail": "Want to play Valorant\n",
+      "id": 7
     }
   ]
 }

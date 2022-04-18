@@ -6,7 +6,7 @@ import Wishlist_componentVue from '../components/Wishlist_component.vue';
 let wish = ref([])
 
 const getWish = async () => {
-  const res = await fetch ('http://localhost:5002/requesttosun')
+  const res = await fetch ('http://localhost:5000/requesttosun')
   if(res.status === 200){
     wish.value = await res.json()
   }
@@ -15,7 +15,7 @@ const getWish = async () => {
 const deleteWish = async (wishID) => {
   let ans = confirm(`Do you want to delete?`)
   if(ans){
-  const res = await fetch (`http://localhost:5002/requesttosun/${wishID}` , {method: 'delete'})
+  const res = await fetch (`http://localhost:5000/requesttosun/${wishID}` , {method: 'delete'})
   if(res.status === 200){
     (wish.value = wish.value.filter((wish) => wish.id !== wishID))
   }
@@ -23,7 +23,7 @@ const deleteWish = async (wishID) => {
 }
 
 const createNewWish = async (newWish) => {
-  const res = await fetch('http://localhost:5002/requesttosun', {
+  const res = await fetch('http://localhost:5000/requesttosun', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
@@ -48,7 +48,7 @@ onBeforeMount(async () =>{
 })
 
 const modifyWish = async (wishs) => {
-  const res = await fetch(`http://localhost:5002/requesttosun/${wishs.id}`, {
+  const res = await fetch(`http://localhost:5000/requesttosun/${wishs.id}`, {
     method: 'PUT',
     headers: {
       'content-type': 'application/json'
@@ -60,11 +60,7 @@ const modifyWish = async (wishs) => {
     wish.value = wish.value.map((wish) =>
     wish.id === modifyWish.id ? { id: modifyWish.id , name: modifyWish.name , noteDetail: modifyWish.noteDetail } : wish
     ) 
-    console.log('sucessfully');
-  }else {
-    console.log('fail');
-    }
-    editingNote.value=""
+  }editingNote.value=""
 }
 
 </script>
@@ -73,7 +69,7 @@ const modifyWish = async (wishs) => {
   <h1>Your request to the sun.</h1>
   <h6>May everyone's wishes come true and fulfilled.</h6>
   <request_componentVue :arrayofwish="wish" @create="createNewWish" @update="modifyWish" :currentNote="editingNote"></request_componentVue>
-  <Wishlist_componentVue :arrayofwish="wish" @delete="deleteWish" @edit="toEditingNode"></Wishlist_componentVue>
+  <Wishlist_componentVue :arrayofwish="wish" @delete="deleteWish" @edit="toEditingNode" ></Wishlist_componentVue>
 </template>
  
 <style>

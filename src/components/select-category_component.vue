@@ -1,11 +1,12 @@
 <script setup>
 import {ref , onBeforeMount} from 'vue'
-import card_component from '../components/card_component.vue';
+import card_component from '../components/show-card_component.vue';
+
 const deck = ref([])
-const type = ref('health');
-//Get Card
+const type = ref([])
+
 const getCard = async () => {
-  const res = await fetch ('http://localhost:5002/major-arcana')
+  const res = await fetch ('http://localhost:5000/major-arcana')
   if(res.status === 200){
     deck.value = await res.json()
   }
@@ -13,11 +14,22 @@ const getCard = async () => {
 onBeforeMount(async () =>{
   await getCard()
 })
+
+const getCategory = async () => {
+  const res = await fetch ('http://localhost:5000/selected/1')
+  if(res.status === 200){
+    type.value = await res.json()
+  }
+}
+
+onBeforeMount(async () =>{
+  await getCategory()
+})
 </script>
  
 <template>
-    <h1>HEALTH HOROSCOPE</h1>
-    <card_component :deck="deck" :typeofcard="type"></card_component>
+    <h1>{{ type.category }} HOROSCOPE</h1>
+    <card_component :deck="deck" :typeofcard="type.category"></card_component>
 </template>
  
 <style>
