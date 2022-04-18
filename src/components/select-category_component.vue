@@ -29,7 +29,9 @@ onBeforeMount(async () =>{
  
 <template>
     <h1>{{ type.category }} HOROSCOPE</h1>
+    <h6>PLEASE SELECTE 3  CARDS</h6>
     <card_component :deck="deck" :typeofcard="type.category"></card_component>
+
 </template>
  
 <style>
